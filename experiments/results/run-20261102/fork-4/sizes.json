@@ -1,0 +1,89 @@
+[
+  {
+    "suite": 1,
+    "profile": "SM2-only",
+    "bodyBytes": 128,
+    "credentialBytes": 200,
+    "messageSignatureBytes": 64,
+    "signedInputBytes": 223,
+    "fragmentPayloadBytes": [
+      200
+    ],
+    "fragments": 1,
+    "messageWireBytes": 284,
+    "credentialFragmentWireBytes": 244,
+    "coldCanonicalBytes": 528,
+    "warmCanonicalBytes": 284,
+    "coldTestFramingBytes": 12,
+    "warmTestFramingBytes": 8
+  },
+  {
+    "suite": 2,
+    "profile": "PHAP",
+    "bodyBytes": 128,
+    "credentialBytes": 866,
+    "messageSignatureBytes": 64,
+    "signedInputBytes": 223,
+    "fragmentPayloadBytes": [
+      256,
+      256,
+      256,
+      98
+    ],
+    "fragments": 4,
+    "messageWireBytes": 284,
+    "credentialFragmentWireBytes": 1042,
+    "coldCanonicalBytes": 1326,
+    "warmCanonicalBytes": 284,
+    "coldTestFramingBytes": 24,
+    "warmTestFramingBytes": 8
+  },
+  {
+    "suite": 3,
+    "profile": "Falcon-message",
+    "bodyBytes": 1025,
+    "credentialBytes": 1763,
+    "messageSignatureBytes": 666,
+    "signedInputBytes": 223,
+    "fragmentPayloadBytes": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      227
+    ],
+    "fragments": 7,
+    "messageWireBytes": 886,
+    "credentialFragmentWireBytes": 2071,
+    "coldCanonicalBytes": 2957,
+    "warmCanonicalBytes": 886,
+    "coldTestFramingBytes": 36,
+    "warmTestFramingBytes": 8
+  },
+  {
+    "suite": 4,
+    "profile": "Dual-message",
+    "bodyBytes": 1025,
+    "credentialBytes": 1763,
+    "messageSignatureBytes": 730,
+    "signedInputBytes": 223,
+    "fragmentPayloadBytes": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      227
+    ],
+    "fragments": 7,
+    "messageWireBytes": 950,
+    "credentialFragmentWireBytes": 2071,
+    "coldCanonicalBytes": 3021,
+    "warmCanonicalBytes": 950,
+    "coldTestFramingBytes": 36,
+    "warmTestFramingBytes": 8
+  }
+]

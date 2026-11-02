@@ -1,0 +1,20 @@
+{
+  "measurementDate": "2026-11-02",
+  "machine": "MacBook Air (Mac15,13)",
+  "processor": "Apple M3",
+  "physicalCores": 8,
+  "performanceCores": 4,
+  "efficiencyCores": 4,
+  "memoryBytes": 17179869184,
+  "os": "macOS 26.6.2",
+  "osBuild": "25G83",
+  "architecture": "aarch64",
+  "hostSource": "sysctl hw.model/hw.memsize/hw.physicalcpu/hw.perflevel*.physicalcpu; sw_vers; system_profiler hardware chip field",
+  "controls": {
+    "cpuAffinity": "not controlled",
+    "frequency": "not controlled",
+    "powerMode": "not controlled",
+    "thermal": "not controlled"
+  },
+  "transport": "127.0.0.1 TCP; same JVM two threads; established per-phase connection; TCP_NODELAY; no deliberate impairments"
+}

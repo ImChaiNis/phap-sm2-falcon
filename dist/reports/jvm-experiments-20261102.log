@@ -1,0 +1,83 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example.phap:phap-tools >---------------------
+[INFO] Building phap-tools 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ phap-tools ---
+[INFO] skip non existing resourceDirectory <PROJECT_ROOT>/tools/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ phap-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin:1.9.22:compile (compile) @ phap-tools ---
+[WARNING] Source root doesn't exist: <PROJECT_ROOT>/tools/src/main/java
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ phap-tools ---
+[INFO] skip non existing resourceDirectory <PROJECT_ROOT>/tools/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ phap-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- kotlin:1.9.22:test-compile (test-compile) @ phap-tools ---
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ phap-tools ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.phap.tools.CaPathRegressionTest
+Authority created. Public-key fingerprint SHA-256: 67e9ee6b88eddfab1d321db6b0b1ec074077e818dcdc59af10dd7fd8c524fe18
+Authority created. Public-key fingerprint SHA-256: 6f40d51a83e7c61f70ac00fe97b5e5dff301175654dc6658e980727637e0a4a4
+Authority created. Public-key fingerprint SHA-256: de2c72b82f55b95c03db7d27f5b63dd863f316f879bfbcc8cefd1b9ccd76e060
+Authority created. Public-key fingerprint SHA-256: 4e9ea8ccb02935daf4e88e97aa0f5b852c3f6da7db9d4910c0f5700b6f5420d6
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 s -- in com.example.phap.tools.CaPathRegressionTest
+[INFO] Running com.example.phap.tools.ProvisioningTest
+Authority created. Public-key fingerprint SHA-256: f58d5c9f59f43dacc35d08be6fe7d3c80ef79ff8b8a36c7fecaa7e264154a3f9
+Issued serial 1: body=128 B, credential=866 B, digest=c3164094f66db615f7dbae852e88c3cb571ffef22c59528f4f4f46ed83b860d2
+Public trust/policy snapshot written; distribute by a trusted management path.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in com.example.phap.tools.ProvisioningTest
+[INFO] Running com.example.phap.experiments.ComparisonProfilesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 s -- in com.example.phap.experiments.ComparisonProfilesTest
+[INFO] Running com.example.phap.experiments.FunctionalTrialsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s -- in com.example.phap.experiments.FunctionalTrialsTest
+[INFO] Running com.example.v2v0614.protocol.ProtocolEngineTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s -- in com.example.v2v0614.protocol.ProtocolEngineTest
+[INFO] Running com.example.v2v0614.protocol.CryptoProviderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s -- in com.example.v2v0614.protocol.CryptoProviderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ phap-tools ---
+[INFO] Building jar: <PROJECT_ROOT>/tools/target/phap-tools.jar
+[INFO] 
+[INFO] --- shade:3.5.3:shade (default) @ phap-tools ---
+[INFO] Including org.jetbrains.kotlin:kotlin-stdlib:jar:1.9.22 in the shaded jar.
+[INFO] Including org.jetbrains:annotations:jar:13.0 in the shaded jar.
+[INFO] Including org.bouncycastle:bcprov-jdk18on:jar:1.86 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.13.2 in the shaded jar.
+[INFO] Including com.google.errorprone:error_prone_annotations:jar:2.41.0 in the shaded jar.
+[WARNING] annotations-13.0.jar, bcprov-jdk18on-1.86.jar, error_prone_annotations-2.41.0.jar, gson-2.13.2.jar, kotlin-stdlib-1.9.22.jar, phap-tools.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] bcprov-jdk18on-1.86.jar, error_prone_annotations-2.41.0.jar, gson-2.13.2.jar, kotlin-stdlib-1.9.22.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing <PROJECT_ROOT>/tools/target/phap-tools.jar with <PROJECT_ROOT>/tools/target/phap-tools-1.0.0-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.524 s
+[INFO] Finished at: 2026-11-02T10:09:33+08:00
+[INFO] ------------------------------------------------------------------------

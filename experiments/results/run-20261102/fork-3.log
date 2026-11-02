@@ -1,0 +1,14 @@
+fork=3 phase=provider/Falcon-sign
+fork=3 phase=provider/SM2-verify
+fork=3 phase=loopback/Falcon-message/cold
+fork=3 phase=loopback/SM2-only/cold
+fork=3 phase=loopback/PHAP/cold
+fork=3 phase=provider/SM2-sign
+fork=3 phase=loopback/PHAP/warm
+fork=3 phase=loopback/Falcon-message/warm
+fork=3 phase=loopback/SM2-only/warm
+fork=3 phase=production-core/PHAP/warm
+fork=3 phase=loopback/Dual-message/cold
+fork=3 phase=loopback/Dual-message/warm
+fork=3 phase=production-core/PHAP/cold
+fork=3 phase=provider/Falcon-verify

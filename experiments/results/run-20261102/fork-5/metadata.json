@@ -1,0 +1,588 @@
+{
+  "fork": 5,
+  "startedUtc": "2026-11-02T02:13:27.525773Z",
+  "warmupPerPhase": 500,
+  "measuredPerPhase": 1000,
+  "phaseOrderSeed": 20261034,
+  "phaseOrder": [
+    "production-core/PHAP/warm",
+    "loopback/Falcon-message/cold",
+    "provider/SM2-sign",
+    "loopback/Dual-message/cold",
+    "provider/Falcon-sign",
+    "loopback/PHAP/cold",
+    "production-core/PHAP/cold",
+    "loopback/Falcon-message/warm",
+    "provider/SM2-verify",
+    "loopback/PHAP/warm",
+    "loopback/SM2-only/cold",
+    "loopback/SM2-only/warm",
+    "loopback/Dual-message/warm",
+    "provider/Falcon-verify"
+  ],
+  "java": {
+    "java.version": "23",
+    "java.runtime.version": "23+37-2369",
+    "java.vendor": "Oracle Corporation",
+    "java.vm.name": "Java HotSpot(TM) 64-Bit Server VM",
+    "java.vm.version": "23+37-2369",
+    "os.name": "Mac OS X",
+    "os.version": "26.6.2",
+    "os.arch": "aarch64"
+  },
+  "jvmArguments": [
+    "-Xms512m",
+    "-Xmx512m",
+    "-XX:+UseG1GC"
+  ],
+  "availableProcessors": 8,
+  "maxHeapBytes": 536870912,
+  "garbageCollectors": [
+    "G1 Young Generation",
+    "G1 Concurrent GC",
+    "G1 Old Generation"
+  ],
+  "clockProbe": {
+    "minPositivePairNanos": 41,
+    "medianPairNanos": 0
+  },
+  "payloadBytes": 128,
+  "scope": "Common-JVM monotonic clock; persistent binary TCP loopback; volatile sequence/replay stores; no Android persistence, radio, TLS or MMS",
+  "cryptographicRandomness": "Real SecureRandom, never seeded by the experiment-order seed",
+  "phases": [
+    {
+      "phase": "production-core/PHAP/warm",
+      "phaseWallNanos": 2817113292,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 188
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 22,
+            "millis": 22
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 1249
+      }
+    },
+    {
+      "phase": "loopback/Falcon-message/cold",
+      "phaseWallNanos": 2452572791,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 22,
+            "millis": 22
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 1249
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 36,
+            "millis": 31
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2192
+      }
+    },
+    {
+      "phase": "provider/SM2-sign",
+      "phaseWallNanos": 2656201208,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 36,
+            "millis": 31
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2192
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 53,
+            "millis": 41
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2284
+      }
+    },
+    {
+      "phase": "loopback/Dual-message/cold",
+      "phaseWallNanos": 5046237750,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 53,
+            "millis": 41
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2284
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 83,
+            "millis": 60
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2866
+      }
+    },
+    {
+      "phase": "provider/Falcon-sign",
+      "phaseWallNanos": 464205292,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 83,
+            "millis": 60
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2866
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 85,
+            "millis": 61
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2881
+      }
+    },
+    {
+      "phase": "loopback/PHAP/cold",
+      "phaseWallNanos": 4664001916,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 85,
+            "millis": 61
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 2881
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 114,
+            "millis": 80
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3535
+      }
+    },
+    {
+      "phase": "production-core/PHAP/cold",
+      "phaseWallNanos": 4285210833,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 114,
+            "millis": 80
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3535
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 142,
+            "millis": 97
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3756
+      }
+    },
+    {
+      "phase": "loopback/Falcon-message/warm",
+      "phaseWallNanos": 653432834,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 142,
+            "millis": 97
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3756
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 145,
+            "millis": 99
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3853
+      }
+    },
+    {
+      "phase": "provider/SM2-verify",
+      "phaseWallNanos": 1624157708,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 145,
+            "millis": 99
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3853
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 156,
+            "millis": 107
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3854
+      }
+    },
+    {
+      "phase": "loopback/PHAP/warm",
+      "phaseWallNanos": 2819781375,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 156,
+            "millis": 107
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3854
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 172,
+            "millis": 117
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3895
+      }
+    },
+    {
+      "phase": "loopback/SM2-only/cold",
+      "phaseWallNanos": 4447917083,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 172,
+            "millis": 117
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 3895
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 201,
+            "millis": 135
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4014
+      }
+    },
+    {
+      "phase": "loopback/SM2-only/warm",
+      "phaseWallNanos": 2811817667,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 201,
+            "millis": 135
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4014
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 218,
+            "millis": 146
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4015
+      }
+    },
+    {
+      "phase": "loopback/Dual-message/warm",
+      "phaseWallNanos": 3250136375,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 218,
+            "millis": 146
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4015
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 237,
+            "millis": 159
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4015
+      }
+    },
+    {
+      "phase": "provider/Falcon-verify",
+      "phaseWallNanos": 52638166,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 237,
+            "millis": 159
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4015
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 237,
+            "millis": 159
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 4018
+      }
+    }
+  ],
+  "failures": 0,
+  "endedUtc": "2026-11-02T02:14:05.588922Z"
+}

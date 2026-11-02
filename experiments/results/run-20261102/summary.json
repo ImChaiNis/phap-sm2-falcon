@@ -1,0 +1,1261 @@
+{
+  "classification": "Single-host desktop JVM experiment; no Android/device or field-network timing claim",
+  "validation": {
+    "forks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "phases_per_fork": 14,
+    "measured_rows_per_phase_per_fork": 1000,
+    "total_measured_rows": 70000,
+    "failed_rows": 0,
+    "all_expected_rows_present": true,
+    "size_metadata_and_public_binary_lengths_consistent": true
+  },
+  "statistics": {
+    "time_unit": "milliseconds",
+    "quantile_definition": "linear interpolation, type 7",
+    "sample_exclusion": "None; failures, GC and scheduling outliers are retained in timing distributions",
+    "mean_interval": "Two-sided 95% Student-t interval over the five JVM fork means; df=4; t=2.776445",
+    "independent_repetition_unit": "JVM fork; messages within a fork share keys, JIT, heap and host conditions",
+    "limits": "Between-fork variation on this host does not quantify variation across devices or network links",
+    "ack_metric": "Receiver-stop TTFA excludes return ACK; sender_ack_elapsed records the additional sender-observed interval separately"
+  },
+  "sizes": [
+    {
+      "suite": 1,
+      "profile": "SM2-only",
+      "bodyBytes": 128,
+      "credentialBytes": 200,
+      "messageSignatureBytes": 64,
+      "signedInputBytes": 223,
+      "fragmentPayloadBytes": [
+        200
+      ],
+      "fragments": 1,
+      "messageWireBytes": 284,
+      "credentialFragmentWireBytes": 244,
+      "coldCanonicalBytes": 528,
+      "warmCanonicalBytes": 284,
+      "coldTestFramingBytes": 12,
+      "warmTestFramingBytes": 8
+    },
+    {
+      "suite": 2,
+      "profile": "PHAP",
+      "bodyBytes": 128,
+      "credentialBytes": 866,
+      "messageSignatureBytes": 64,
+      "signedInputBytes": 223,
+      "fragmentPayloadBytes": [
+        256,
+        256,
+        256,
+        98
+      ],
+      "fragments": 4,
+      "messageWireBytes": 284,
+      "credentialFragmentWireBytes": 1042,
+      "coldCanonicalBytes": 1326,
+      "warmCanonicalBytes": 284,
+      "coldTestFramingBytes": 24,
+      "warmTestFramingBytes": 8
+    },
+    {
+      "suite": 3,
+      "profile": "Falcon-message",
+      "bodyBytes": 1025,
+      "credentialBytes": 1763,
+      "messageSignatureBytes": 666,
+      "signedInputBytes": 223,
+      "fragmentPayloadBytes": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        227
+      ],
+      "fragments": 7,
+      "messageWireBytes": 886,
+      "credentialFragmentWireBytes": 2071,
+      "coldCanonicalBytes": 2957,
+      "warmCanonicalBytes": 886,
+      "coldTestFramingBytes": 36,
+      "warmTestFramingBytes": 8
+    },
+    {
+      "suite": 4,
+      "profile": "Dual-message",
+      "bodyBytes": 1025,
+      "credentialBytes": 1763,
+      "messageSignatureBytes": 730,
+      "signedInputBytes": 223,
+      "fragmentPayloadBytes": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        227
+      ],
+      "fragments": 7,
+      "messageWireBytes": 950,
+      "credentialFragmentWireBytes": 2071,
+      "coldCanonicalBytes": 3021,
+      "warmCanonicalBytes": 950,
+      "coldTestFramingBytes": 36,
+      "warmTestFramingBytes": 8
+    }
+  ],
+  "phases": {
+    "provider/SM2-sign": {
+      "n": 5000,
+      "mean_ms": 0.6959376886,
+      "median_ms": 0.674667,
+      "p95_ms": 0.7514000000000001,
+      "min_ms": 0.618709,
+      "max_ms": 12.013917,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        0.6681290990000001,
+        0.6894423639999999,
+        0.772971001,
+        0.67376703,
+        0.6753789490000001
+      ],
+      "mean_ci95_low_ms": 0.6415879781529644,
+      "mean_ci95_high_ms": 0.7502873990470357,
+      "mean_ci95_half_width_ms": 0.054349710447035626,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.6681290990000001,
+          "median_ms": 0.6674165,
+          "p95_ms": 0.711083,
+          "min_ms": 0.618709,
+          "max_ms": 1.302083
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.6894423639999999,
+          "median_ms": 0.680771,
+          "p95_ms": 0.7175851,
+          "min_ms": 0.653042,
+          "max_ms": 1.527292
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.772971001,
+          "median_ms": 0.6952915,
+          "p95_ms": 1.1720273999999997,
+          "min_ms": 0.652791,
+          "max_ms": 12.013917
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.67376703,
+          "median_ms": 0.669625,
+          "p95_ms": 0.7003,
+          "min_ms": 0.651917,
+          "max_ms": 1.417666
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.6753789490000001,
+          "median_ms": 0.6687915,
+          "p95_ms": 0.7041271,
+          "min_ms": 0.648458,
+          "max_ms": 1.3925
+        }
+      ]
+    },
+    "provider/SM2-verify": {
+      "n": 5000,
+      "mean_ms": 1.087396134,
+      "median_ms": 1.069708,
+      "p95_ms": 1.1792666500000002,
+      "min_ms": 0.961792,
+      "max_ms": 2.239208,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.0576899690000001,
+        1.088651502,
+        1.081824134,
+        1.138239657,
+        1.070575408
+      ],
+      "mean_ci95_low_ms": 1.0492107782462963,
+      "mean_ci95_high_ms": 1.1255814897537038,
+      "mean_ci95_half_width_ms": 0.038185355753703756,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.0576899690000001,
+          "median_ms": 1.0549165,
+          "p95_ms": 1.11535625,
+          "min_ms": 0.961792,
+          "max_ms": 1.751333
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.088651502,
+          "median_ms": 1.0664795,
+          "p95_ms": 1.2032098,
+          "min_ms": 1.012541,
+          "max_ms": 1.914375
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.081824134,
+          "median_ms": 1.057833,
+          "p95_ms": 1.192025,
+          "min_ms": 1.012125,
+          "max_ms": 2.239208
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.138239657,
+          "median_ms": 1.1259165,
+          "p95_ms": 1.2069125,
+          "min_ms": 1.074875,
+          "max_ms": 2.087583
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.070575408,
+          "median_ms": 1.0561665,
+          "p95_ms": 1.1262434,
+          "min_ms": 1.00975,
+          "max_ms": 1.936209
+        }
+      ]
+    },
+    "provider/Falcon-sign": {
+      "n": 5000,
+      "mean_ms": 0.26634816499999997,
+      "median_ms": 0.259042,
+      "p95_ms": 0.29671215,
+      "min_ms": 0.243375,
+      "max_ms": 1.625084,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        0.263740342,
+        0.256877832,
+        0.281144088,
+        0.262936283,
+        0.26704228
+      ],
+      "mean_ci95_low_ms": 0.25511247799110415,
+      "mean_ci95_high_ms": 0.2775838520088959,
+      "mean_ci95_half_width_ms": 0.011235687008895892,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.263740342,
+          "median_ms": 0.262375,
+          "p95_ms": 0.27283815,
+          "min_ms": 0.247833,
+          "max_ms": 0.916834
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.256877832,
+          "median_ms": 0.2545835,
+          "p95_ms": 0.2633351,
+          "min_ms": 0.243917,
+          "max_ms": 0.983958
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.281144088,
+          "median_ms": 0.271125,
+          "p95_ms": 0.3264223,
+          "min_ms": 0.246958,
+          "max_ms": 1.240583
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.262936283,
+          "median_ms": 0.254625,
+          "p95_ms": 0.2797542,
+          "min_ms": 0.243375,
+          "max_ms": 1.625084
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.26704228,
+          "median_ms": 0.2597295,
+          "p95_ms": 0.28491009999999994,
+          "min_ms": 0.243375,
+          "max_ms": 1.036417
+        }
+      ]
+    },
+    "provider/Falcon-verify": {
+      "n": 5000,
+      "mean_ms": 0.0296472356,
+      "median_ms": 0.029541,
+      "p95_ms": 0.031,
+      "min_ms": 0.027583,
+      "max_ms": 0.059875,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        0.029679953000000002,
+        0.029317169,
+        0.029955828,
+        0.030181787,
+        0.029101441
+      ],
+      "mean_ci95_low_ms": 0.029095819152869077,
+      "mean_ci95_high_ms": 0.03019865204713092,
+      "mean_ci95_half_width_ms": 0.0005514164471309226,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.029679953000000002,
+          "median_ms": 0.029,
+          "p95_ms": 0.033916,
+          "min_ms": 0.027583,
+          "max_ms": 0.049917
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.029317169,
+          "median_ms": 0.029208,
+          "p95_ms": 0.02966905,
+          "min_ms": 0.028791,
+          "max_ms": 0.035875
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.029955828,
+          "median_ms": 0.029875,
+          "p95_ms": 0.03050205,
+          "min_ms": 0.029208,
+          "max_ms": 0.055292
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.030181787,
+          "median_ms": 0.030125,
+          "p95_ms": 0.0305,
+          "min_ms": 0.029542,
+          "max_ms": 0.037208
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.029101441,
+          "median_ms": 0.029,
+          "p95_ms": 0.029625,
+          "min_ms": 0.028416,
+          "max_ms": 0.059875
+        }
+      ]
+    },
+    "loopback/SM2-only/cold": {
+      "n": 5000,
+      "mean_ms": 2.8525434578,
+      "median_ms": 2.826083,
+      "p95_ms": 2.9745228999999997,
+      "min_ms": 2.634416,
+      "max_ms": 7.774125,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        2.83524316,
+        2.8556277050000003,
+        2.859844116,
+        2.8623253280000003,
+        2.84967698
+      ],
+      "mean_ci95_low_ms": 2.839141333541631,
+      "mean_ci95_high_ms": 2.86594558205837,
+      "mean_ci95_half_width_ms": 0.01340212425836953,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.83524316,
+          "median_ms": 2.822292,
+          "p95_ms": 3.0007857,
+          "min_ms": 2.657042,
+          "max_ms": 7.139542
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.8556277050000003,
+          "median_ms": 2.8229165,
+          "p95_ms": 3.0103124999999995,
+          "min_ms": 2.634416,
+          "max_ms": 4.619375
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.859844116,
+          "median_ms": 2.828459,
+          "p95_ms": 2.94541425,
+          "min_ms": 2.74625,
+          "max_ms": 7.774125
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.8623253280000003,
+          "median_ms": 2.8304165,
+          "p95_ms": 2.9291952,
+          "min_ms": 2.769084,
+          "max_ms": 4.935
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.84967698,
+          "median_ms": 2.820146,
+          "p95_ms": 2.9375124999999995,
+          "min_ms": 2.768208,
+          "max_ms": 5.762459
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 2.894608068,
+        "median_ms": 2.867875,
+        "p95_ms": 3.02225835,
+        "min_ms": 2.678375,
+        "max_ms": 7.864583
+      }
+    },
+    "loopback/SM2-only/warm": {
+      "n": 5000,
+      "mean_ms": 1.8671129194,
+      "median_ms": 1.7861455,
+      "p95_ms": 2.16555,
+      "min_ms": 1.6385,
+      "max_ms": 14.848708,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.769890422,
+        1.8579634580000002,
+        1.968964741,
+        1.9817819920000002,
+        1.756963984
+      ],
+      "mean_ci95_low_ms": 1.7351346356919783,
+      "mean_ci95_high_ms": 1.9990912031080221,
+      "mean_ci95_half_width_ms": 0.13197828370802192,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.769890422,
+          "median_ms": 1.7584165,
+          "p95_ms": 1.8086690499999998,
+          "min_ms": 1.659958,
+          "max_ms": 2.543708
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.8579634580000002,
+          "median_ms": 1.790896,
+          "p95_ms": 2.10529405,
+          "min_ms": 1.641708,
+          "max_ms": 11.238375
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.968964741,
+          "median_ms": 1.825333,
+          "p95_ms": 2.5842277499999993,
+          "min_ms": 1.71875,
+          "max_ms": 14.69725
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.9817819920000002,
+          "median_ms": 1.871229,
+          "p95_ms": 2.361633349999999,
+          "min_ms": 1.730208,
+          "max_ms": 14.848708
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.756963984,
+          "median_ms": 1.7495205,
+          "p95_ms": 1.78930655,
+          "min_ms": 1.6385,
+          "max_ms": 2.522458
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 1.9052723634,
+        "median_ms": 1.8222085,
+        "p95_ms": 2.2051396000000008,
+        "min_ms": 1.671666,
+        "max_ms": 14.976833
+      }
+    },
+    "loopback/PHAP/cold": {
+      "n": 5000,
+      "mean_ms": 2.8914024516,
+      "median_ms": 2.864542,
+      "p95_ms": 3.01103335,
+      "min_ms": 2.668583,
+      "max_ms": 21.028583,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        2.882014656,
+        2.880039926,
+        2.89148621,
+        2.890809661,
+        2.9126618050000004
+      ],
+      "mean_ci95_low_ms": 2.8753379372624037,
+      "mean_ci95_high_ms": 2.907466965937597,
+      "mean_ci95_half_width_ms": 0.016064514337596668,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.882014656,
+          "median_ms": 2.8479585,
+          "p95_ms": 3.02394165,
+          "min_ms": 2.668583,
+          "max_ms": 21.028583
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.880039926,
+          "median_ms": 2.862417,
+          "p95_ms": 2.92608125,
+          "min_ms": 2.742083,
+          "max_ms": 4.059667
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.89148621,
+          "median_ms": 2.859646,
+          "p95_ms": 3.0574646000000003,
+          "min_ms": 2.714291,
+          "max_ms": 3.727042
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.890809661,
+          "median_ms": 2.8739995,
+          "p95_ms": 2.9382961499999998,
+          "min_ms": 2.736125,
+          "max_ms": 3.671041
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.9126618050000004,
+          "median_ms": 2.8670625,
+          "p95_ms": 3.0926410499999992,
+          "min_ms": 2.808084,
+          "max_ms": 4.887667
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 2.9326399043999998,
+        "median_ms": 2.9054165,
+        "p95_ms": 3.0557506,
+        "min_ms": 2.707584,
+        "max_ms": 21.087416
+      }
+    },
+    "loopback/PHAP/warm": {
+      "n": 5000,
+      "mean_ms": 1.7708213372,
+      "median_ms": 1.761167,
+      "p95_ms": 1.84616905,
+      "min_ms": 1.623709,
+      "max_ms": 3.195,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.739198003,
+        1.7803518740000002,
+        1.796589473,
+        1.766117531,
+        1.771849805
+      ],
+      "mean_ci95_low_ms": 1.7446427824970456,
+      "mean_ci95_high_ms": 1.7969998919029542,
+      "mean_ci95_half_width_ms": 0.026178554702954274,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.739198003,
+          "median_ms": 1.740104,
+          "p95_ms": 1.8470898999999998,
+          "min_ms": 1.629208,
+          "max_ms": 2.506
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.7803518740000002,
+          "median_ms": 1.768416,
+          "p95_ms": 1.85071635,
+          "min_ms": 1.623709,
+          "max_ms": 2.5585
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.796589473,
+          "median_ms": 1.769208,
+          "p95_ms": 1.9169726,
+          "min_ms": 1.717833,
+          "max_ms": 3.195
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.766117531,
+          "median_ms": 1.756188,
+          "p95_ms": 1.8004274,
+          "min_ms": 1.661458,
+          "max_ms": 2.492083
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.771849805,
+          "median_ms": 1.7629165,
+          "p95_ms": 1.80458305,
+          "min_ms": 1.630083,
+          "max_ms": 2.613667
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 1.8077635224,
+        "median_ms": 1.798542,
+        "p95_ms": 1.8836711499999998,
+        "min_ms": 1.6515,
+        "max_ms": 3.257792
+      }
+    },
+    "loopback/Falcon-message/cold": {
+      "n": 5000,
+      "mean_ms": 1.4699184188,
+      "median_ms": 1.453625,
+      "p95_ms": 1.5398035,
+      "min_ms": 1.314625,
+      "max_ms": 6.33625,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.4685139680000001,
+        1.426648401,
+        1.491642193,
+        1.502581853,
+        1.460205679
+      ],
+      "mean_ci95_low_ms": 1.4331505575097196,
+      "mean_ci95_high_ms": 1.5066862800902805,
+      "mean_ci95_half_width_ms": 0.03676786129028034,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.4685139680000001,
+          "median_ms": 1.4547915,
+          "p95_ms": 1.541783,
+          "min_ms": 1.3385,
+          "max_ms": 6.33625
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.426648401,
+          "median_ms": 1.4102295,
+          "p95_ms": 1.5039208499999999,
+          "min_ms": 1.314625,
+          "max_ms": 2.131125
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.491642193,
+          "median_ms": 1.4542295,
+          "p95_ms": 1.620242,
+          "min_ms": 1.4205,
+          "max_ms": 3.115459
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.502581853,
+          "median_ms": 1.4935835,
+          "p95_ms": 1.5262542,
+          "min_ms": 1.436,
+          "max_ms": 2.203875
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.460205679,
+          "median_ms": 1.4492915,
+          "p95_ms": 1.49800625,
+          "min_ms": 1.413125,
+          "max_ms": 2.168709
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 1.507219703,
+        "median_ms": 1.4915415,
+        "p95_ms": 1.5768979500000002,
+        "min_ms": 1.34225,
+        "max_ms": 6.403875
+      }
+    },
+    "loopback/Falcon-message/warm": {
+      "n": 5000,
+      "mean_ms": 0.341679752,
+      "median_ms": 0.332375,
+      "p95_ms": 0.436708,
+      "min_ms": 0.296583,
+      "max_ms": 1.214375,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        0.329693797,
+        0.331578743,
+        0.33699344400000003,
+        0.376893819,
+        0.333238957
+      ],
+      "mean_ci95_low_ms": 0.31701050681521425,
+      "mean_ci95_high_ms": 0.36634899718478575,
+      "mean_ci95_half_width_ms": 0.02466924518478572,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.329693797,
+          "median_ms": 0.328875,
+          "p95_ms": 0.3474191,
+          "min_ms": 0.296583,
+          "max_ms": 0.998459
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.331578743,
+          "median_ms": 0.330208,
+          "p95_ms": 0.34000415,
+          "min_ms": 0.309458,
+          "max_ms": 0.972291
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.33699344400000003,
+          "median_ms": 0.3328125,
+          "p95_ms": 0.36282325,
+          "min_ms": 0.313625,
+          "max_ms": 0.955417
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.376893819,
+          "median_ms": 0.340813,
+          "p95_ms": 0.52290385,
+          "min_ms": 0.315584,
+          "max_ms": 1.214375
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.333238957,
+          "median_ms": 0.3316665,
+          "p95_ms": 0.3416333,
+          "min_ms": 0.313167,
+          "max_ms": 0.9955
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 0.3722078702,
+        "median_ms": 0.364167,
+        "p95_ms": 0.47180030000000006,
+        "min_ms": 0.320292,
+        "max_ms": 1.239334
+      }
+    },
+    "loopback/Dual-message/cold": {
+      "n": 5000,
+      "mean_ms": 3.2540416839999997,
+      "median_ms": 3.214875,
+      "p95_ms": 3.46855445,
+      "min_ms": 2.964125,
+      "max_ms": 14.565292,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        3.091845245,
+        3.228277688,
+        3.368238745,
+        3.346373496,
+        3.2354732459999997
+      ],
+      "mean_ci95_low_ms": 3.1167796970064625,
+      "mean_ci95_high_ms": 3.391303670993537,
+      "mean_ci95_half_width_ms": 0.13726198699353742,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.091845245,
+          "median_ms": 3.0409795,
+          "p95_ms": 3.2571309,
+          "min_ms": 2.9675,
+          "max_ms": 4.087125
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.228277688,
+          "median_ms": 3.186687,
+          "p95_ms": 3.47412915,
+          "min_ms": 2.964125,
+          "max_ms": 5.774958
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.368238745,
+          "median_ms": 3.339604,
+          "p95_ms": 3.5830526999999996,
+          "min_ms": 3.136417,
+          "max_ms": 4.611334
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.346373496,
+          "median_ms": 3.3321045,
+          "p95_ms": 3.4448944,
+          "min_ms": 3.146417,
+          "max_ms": 4.46675
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.2354732459999997,
+          "median_ms": 3.15425,
+          "p95_ms": 3.5269103999999984,
+          "min_ms": 3.095166,
+          "max_ms": 14.565292
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 3.2953016354,
+        "median_ms": 3.256354,
+        "p95_ms": 3.5107371499999998,
+        "min_ms": 2.996417,
+        "max_ms": 15.2675
+      }
+    },
+    "loopback/Dual-message/warm": {
+      "n": 5000,
+      "mean_ms": 2.1330416914,
+      "median_ms": 2.078542,
+      "p95_ms": 2.3336816000000002,
+      "min_ms": 1.905833,
+      "max_ms": 16.792666,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        2.251995412,
+        2.084192895,
+        2.1627610120000003,
+        2.106933036,
+        2.059326102
+      ],
+      "mean_ci95_low_ms": 2.0377989424673224,
+      "mean_ci95_high_ms": 2.2282844403326774,
+      "mean_ci95_half_width_ms": 0.09524274893267759,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.251995412,
+          "median_ms": 2.1036455,
+          "p95_ms": 2.7260267999999996,
+          "min_ms": 2.009917,
+          "max_ms": 16.792666
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.084192895,
+          "median_ms": 2.055709,
+          "p95_ms": 2.223542,
+          "min_ms": 1.90925,
+          "max_ms": 2.988125
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.1627610120000003,
+          "median_ms": 2.147521,
+          "p95_ms": 2.2269151999999997,
+          "min_ms": 2.081708,
+          "max_ms": 3.111416
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.106933036,
+          "median_ms": 2.0624375,
+          "p95_ms": 2.3365434499999993,
+          "min_ms": 1.995084,
+          "max_ms": 2.870833
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.059326102,
+          "median_ms": 2.045354,
+          "p95_ms": 2.1342110499999998,
+          "min_ms": 1.905833,
+          "max_ms": 2.872416
+        }
+      ],
+      "sender_ack_elapsed": {
+        "n": 5000,
+        "mean_ms": 2.1703067259999997,
+        "median_ms": 2.1156045,
+        "p95_ms": 2.3695726000000006,
+        "min_ms": 1.936166,
+        "max_ms": 16.8755
+      }
+    },
+    "production-core/PHAP/cold": {
+      "n": 5000,
+      "mean_ms": 3.1000786474,
+      "median_ms": 2.9797505,
+      "p95_ms": 3.6148851000000004,
+      "min_ms": 2.721875,
+      "max_ms": 54.393791,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        3.615402443,
+        2.876998036,
+        3.0582634619999998,
+        3.09266783,
+        2.857061466
+      ],
+      "mean_ci95_low_ms": 2.719298374134548,
+      "mean_ci95_high_ms": 3.4808589206654514,
+      "mean_ci95_half_width_ms": 0.3807802732654519,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.615402443,
+          "median_ms": 3.0564165,
+          "p95_ms": 5.438122249999999,
+          "min_ms": 2.801583,
+          "max_ms": 54.393791
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.876998036,
+          "median_ms": 2.831187,
+          "p95_ms": 3.0605104,
+          "min_ms": 2.721875,
+          "max_ms": 5.354583
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.0582634619999998,
+          "median_ms": 3.0297915,
+          "p95_ms": 3.2198979,
+          "min_ms": 2.931416,
+          "max_ms": 4.049333
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 3.09266783,
+          "median_ms": 3.0492915,
+          "p95_ms": 3.3453375,
+          "min_ms": 2.946667,
+          "max_ms": 4.213166
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 2.857061466,
+          "median_ms": 2.833583,
+          "p95_ms": 2.9268693999999997,
+          "min_ms": 2.755542,
+          "max_ms": 3.819791
+        }
+      ]
+    },
+    "production-core/PHAP/warm": {
+      "n": 5000,
+      "mean_ms": 1.811648328,
+      "median_ms": 1.773958,
+      "p95_ms": 1.9836941000000001,
+      "min_ms": 1.603417,
+      "max_ms": 6.334541,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.7661944850000002,
+        1.7521688089999998,
+        1.886133644,
+        1.870895465,
+        1.782849237
+      ],
+      "mean_ci95_low_ms": 1.7343764712122576,
+      "mean_ci95_high_ms": 1.8889201847877424,
+      "mean_ci95_half_width_ms": 0.0772718567877423,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.7661944850000002,
+          "median_ms": 1.7574585,
+          "p95_ms": 1.8592226,
+          "min_ms": 1.603417,
+          "max_ms": 3.213875
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.7521688089999998,
+          "median_ms": 1.7318335,
+          "p95_ms": 1.83775625,
+          "min_ms": 1.629959,
+          "max_ms": 2.64525
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.886133644,
+          "median_ms": 1.7897295,
+          "p95_ms": 2.37213605,
+          "min_ms": 1.708583,
+          "max_ms": 6.334541
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.870895465,
+          "median_ms": 1.8496665,
+          "p95_ms": 1.97401875,
+          "min_ms": 1.772917,
+          "max_ms": 2.880417
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.782849237,
+          "median_ms": 1.752375,
+          "p95_ms": 1.9578618499999998,
+          "min_ms": 1.685875,
+          "max_ms": 2.699583
+        }
+      ]
+    }
+  },
+  "failed_observations": []
+}

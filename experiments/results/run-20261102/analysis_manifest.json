@@ -1,0 +1,6 @@
+{
+  "summaryScriptSha256": "dfe89efd8c9e49f6f623246248d175ecd10b45d29a640df028a67ea9ee2535ee",
+  "plotting": "Matplotlib 3.10.7; generated after all timed forks",
+  "postMeasurementChanges": "Only plotting label position changed in summarize.py after run_manifest captured sources; timing and aggregate math unchanged. README/report/host metadata and packaging were added after measurements.",
+  "runtime": "Python 3.12; aggregation stdlib; plot dependencies in plot-requirements.txt"
+}

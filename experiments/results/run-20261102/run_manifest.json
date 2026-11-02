@@ -1,0 +1,134 @@
+{
+  "driverArguments": {
+    "output": "<PROJECT_ROOT>/experiments/results/run-20261102",
+    "java": "/usr/bin/java",
+    "forks": 5,
+    "warmup": 500,
+    "samples": 1000,
+    "functional_repetitions": 100
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xms512m",
+        "-Xmx512m",
+        "-XX:+UseG1GC",
+        "-cp",
+        "<PROJECT_ROOT>/tools/target/phap-tools.jar",
+        "com.example.phap.experiments.BenchmarkMainKt",
+        "benchmark",
+        "<PROJECT_ROOT>/experiments/results/run-20261102/fork-1",
+        "1",
+        "500",
+        "1000"
+      ],
+      "returncode": 0,
+      "wallSeconds": 39.08149333309848
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xms512m",
+        "-Xmx512m",
+        "-XX:+UseG1GC",
+        "-cp",
+        "<PROJECT_ROOT>/tools/target/phap-tools.jar",
+        "com.example.phap.experiments.BenchmarkMainKt",
+        "benchmark",
+        "<PROJECT_ROOT>/experiments/results/run-20261102/fork-2",
+        "2",
+        "500",
+        "1000"
+      ],
+      "returncode": 0,
+      "wallSeconds": 38.09227458294481
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xms512m",
+        "-Xmx512m",
+        "-XX:+UseG1GC",
+        "-cp",
+        "<PROJECT_ROOT>/tools/target/phap-tools.jar",
+        "com.example.phap.experiments.BenchmarkMainKt",
+        "benchmark",
+        "<PROJECT_ROOT>/experiments/results/run-20261102/fork-3",
+        "3",
+        "500",
+        "1000"
+      ],
+      "returncode": 0,
+      "wallSeconds": 39.488672625040635
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xms512m",
+        "-Xmx512m",
+        "-XX:+UseG1GC",
+        "-cp",
+        "<PROJECT_ROOT>/tools/target/phap-tools.jar",
+        "com.example.phap.experiments.BenchmarkMainKt",
+        "benchmark",
+        "<PROJECT_ROOT>/experiments/results/run-20261102/fork-4",
+        "4",
+        "500",
+        "1000"
+      ],
+      "returncode": 0,
+      "wallSeconds": 39.16927399998531
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xms512m",
+        "-Xmx512m",
+        "-XX:+UseG1GC",
+        "-cp",
+        "<PROJECT_ROOT>/tools/target/phap-tools.jar",
+        "com.example.phap.experiments.BenchmarkMainKt",
+        "benchmark",
+        "<PROJECT_ROOT>/experiments/results/run-20261102/fork-5",
+        "5",
+        "500",
+        "1000"
+      ],
+      "returncode": 0,
+      "wallSeconds": 38.26514087500982
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-Xms512m",
+        "-Xmx512m",
+        "-XX:+UseG1GC",
+        "-cp",
+        "<PROJECT_ROOT>/tools/target/phap-tools.jar",
+        "com.example.phap.experiments.BenchmarkMainKt",
+        "functional",
+        "<PROJECT_ROOT>/experiments/results/run-20261102/functional",
+        "100"
+      ],
+      "returncode": 0
+    }
+  ],
+  "jarSha256": "1f54e78c71e85a034ab2c74e949f418a47a5e8789ed5f0d3759f73babcdc855c",
+  "sourceSha256": {
+    "app/src/main/java/com/example/v2v0614/protocol/CryptoProvider.kt": "82daa23971ed534cffdc2e9c84b09ae143d7cb3e17da6e30b54e09b896f1e674",
+    "app/src/main/java/com/example/v2v0614/protocol/ProtocolEngine.kt": "bf2eaefeec31b90d0d168b6dfc25fe151d5d8fd70c50e98a4c8608bac41f93f6",
+    "app/src/main/java/com/example/v2v0614/protocol/ProtocolTypes.kt": "f4123ec9024f6b3dd66400b181b24505491ebc1b5bc0eb7b35af7f820dce29cb",
+    "app/src/main/java/com/example/v2v0614/protocol/WireCodec.kt": "586a3b877d6eddb79d5b8dfda6106b097d7a23f6752e4fca257e59e5568fb5d4",
+    "experiments/run_benchmarks.py": "3d8deacf8ff1d5cfec4b538ffb16d889a88bd224faf81af78183583f288a10e3",
+    "tools/pom.xml": "64e923a14cf3097a98f63f909ffa30b3037f06cd4921a4e8e66cfa8713b3163f",
+    "tools/src/main/kotlin/com/example/phap/experiments/BenchmarkMain.kt": "ad1f00ec6e9e93c990fc25d54b0068ef43077e884d811c55cebfb4f0fcef9767",
+    "tools/src/main/kotlin/com/example/phap/experiments/ComparisonProfiles.kt": "7d7e931c566eba896e01c87b19d16e97c8cb2b07d58b19aa7f51f83c844b5fdb",
+    "tools/src/main/kotlin/com/example/phap/experiments/FunctionalTrials.kt": "093c922f6a71b880cead3ad7eeafec586ee00d7b0ac592bad5284f3cb057066c",
+    "tools/src/main/kotlin/com/example/phap/tools/CaTool.kt": "e9dd4abba7296035328822d03660cdbe810d5083fcaa8e872df783409f97c978",
+    "tools/src/test/kotlin/com/example/phap/experiments/ComparisonProfilesTest.kt": "3b0f873e17638746ddbe1a9966807c5911f6a6b2c875d5b551b0899d08b4ad2a",
+    "tools/src/test/kotlin/com/example/phap/experiments/FunctionalTrialsTest.kt": "a445b81ef23a146aafef581c796f362c9a1116dd9fc1dd954cb914f0433155f7",
+    "tools/src/test/kotlin/com/example/phap/tools/CaPathRegressionTest.kt": "e433516ed2b3a261c948018afbf0c5184f66af25b2c6bd366b0f52def2f845b5",
+    "tools/src/test/kotlin/com/example/phap/tools/ProvisioningTest.kt": "40fb60f2c90181f3162b2e27fa88d4470e6cbcde11d626ad0654c1dca99d0733"
+  }
+}
