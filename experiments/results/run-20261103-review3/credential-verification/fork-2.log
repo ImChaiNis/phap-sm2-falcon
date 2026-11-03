@@ -1,0 +1,4 @@
+fork=2 phase=credential/SM2-verify/D128
+fork=2 phase=credential/Falcon-verify/D128
+fork=2 phase=credential/Falcon-verify/D1025
+fork=2 phase=credential/SM2-verify/D1025

@@ -56,3 +56,17 @@ The experiment uses volatile sequence/replay stores. It does not measure Android
 ## Licensing and key material
 
 No license grant for the authors' original project code or data is inferred by this distribution; an author-selected license has not been supplied. Third-party components retain their own licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). No operational or generated experiment private signing keys are exported. Source known-answer tests deliberately contain public standard test vectors and test signer IDs.
+
+## Independent repeat: 2026-11-03
+
+An independent repeat adds 70,000 original-protocol/provider observations plus 20,000 separate CA-verification observations, each track in five sequential fresh JVMs with 500 warm-up and 1000 measured iterations per phase. All 90,000 measured checks and 1500 controlled functional expectations passed. The rebuilt Maven suite passed 36 tests. This is a real-cryptography desktop protocol simulation on the recorded M3/macOS/Java 23 host, with fixed trusted policy state; it supplies no representative-DRET hardware, MMS, ledger/contract or finality measurement. The original 2026-11-02 data and original execution JAR remain unchanged.
+
+- [Complete repeat data and Chinese reviewer-3 report](experiments/results/run-20261103-review3/reviewer3-results-20261103.md)
+- [Protocol/provider summary CSV](experiments/results/run-20261103-review3/summary.csv)
+- [Credential-body verification summary CSV](experiments/results/run-20261103-review3/credential-verification/summary.csv)
+- [Encoded body, signature, credential and fragment inventory](experiments/results/run-20261103-review3/reviewer3-encoding-sizes.csv)
+- [Additional CA-verification reproduction guide](experiments/CREDENTIAL_VERIFICATION_README.md)
+
+The added CA test measures the production CryptoProvider verifying real 32-signature pools over 128-byte (suite 2) and 1025-byte (suite 3) canonical credential bodies, separately from the existing 223-byte application-input provider test. Medians/p95 and five-fork mean intervals retain all observations. These size classes are not per-profile isolated CA-verification measurements.
+
+Build with the existing Maven command, then run `python3 experiments/run_credential_verification.py --output experiments/results/new-run/credential-verification` and `python3 experiments/summarize_credential_verification.py experiments/results/new-run/credential-verification` after the main protocol run has finished. Never overlap timed forks, builds or other CPU-intensive work. To use the supplied repeat executable instead of rebuilding, copy `dist/phap-tools-review3-20261103.jar` to `tools/target/phap-tools.jar`; the original `dist/phap-tools.jar` intentionally does not include this additional benchmark.

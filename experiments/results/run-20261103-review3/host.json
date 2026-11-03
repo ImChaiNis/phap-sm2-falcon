@@ -1,0 +1,15 @@
+{
+  "model": "MacBook Air (Mac15,13)",
+  "soc": "Apple M3",
+  "cores": 8,
+  "performance_cores": 4,
+  "efficiency_cores": 4,
+  "ram_gib": 16,
+  "ram_source": "system_profiler SPHardwareDataType Memory: 16 GB",
+  "os": "macOS",
+  "os_version": "26.6.2",
+  "os_build": "25G83",
+  "architecture": "arm64",
+  "timestamp_utc": "2026-11-03T09:07:21.979549+00:00",
+  "scope": "Desktop software protocol simulation. Not representative DRET hardware; no field-network or Android execution claim."
+}

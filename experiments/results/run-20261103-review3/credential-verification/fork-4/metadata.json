@@ -1,0 +1,387 @@
+{
+  "classification": "Single-host desktop JVM provider verification of real CA-signed canonical credential bodies; not terminal measurements",
+  "fork": 4,
+  "startedUtc": "2026-11-03T09:16:57.700988Z",
+  "timingStartedUtc": "2026-11-03T09:16:58.047294Z",
+  "warmupPerPhase": 500,
+  "measuredPerPhase": 1000,
+  "signaturePoolSize": 32,
+  "phaseOrderSeed": 20261107,
+  "phaseOrder": [
+    "credential/Falcon-verify/D1025",
+    "credential/Falcon-verify/D128",
+    "credential/SM2-verify/D128",
+    "credential/SM2-verify/D1025"
+  ],
+  "fixtures": [
+    {
+      "phase": "credential/SM2-verify/D128",
+      "fixtureSuite": 2,
+      "bodyBytes": 128,
+      "bodySha256": "641e9567f0958276cab67116bcd11b730747deb8c389dafaaa6e8bed52bea6a0",
+      "signatureBytes": [
+        64
+      ],
+      "poolSize": 32,
+      "relativeDirectory": "public-fixtures/D128-SM2",
+      "signatureSha256": [
+        "73dee6b17ac3985165a8e20bb14d55f3153ec363744a2c75ec41245a66d38ddf",
+        "6f11ba7ae4a629ca7fb99e7c6559a373dba12f0073d51bc6868a5907c189208a",
+        "ff986b7d817452eafe91befed2c7ec223fad7a71d4625a224f087b4f9a8b5e85",
+        "72ac4f399ca66131566a4922bb6bdb1003a9cd8df370f52397b43816c9168a70",
+        "7c5bc917704f68b1400ad0f9a6b2e69b7fd2613f0e305172d17f06f0fc0f2f30",
+        "d6da1b8954030801ab6e303322df8b0fca0179279ce0c5b5b79cfa8a1167e80b",
+        "fdb8ffd798482d29e894d23416e23f412946012271531e36e02fe6e7a8dfa2e9",
+        "f298bf6e09f38d10f1ed5d6458142380df8810c8682e531ce661007fa2d7c2c3",
+        "e985c00434f0f476a03f39daff7faccf881aafe88894f5c4b4cc6e7879b6cfd9",
+        "c5a8f4017cf266a972f8d317461a771561e26376b38b1f18873c33de82ca5684",
+        "c6a3bd884f064821b8f0cde88a007b35b914bf26899449d2c805c915917c3012",
+        "2adf8e49af66467415f174192d86d9d802387a8aa2463a0a1715b0bfb03c0f6b",
+        "9a51863cf0fa8d3f6d60f7b917f9a858f96b684fe13d780156057f9f8c6eae16",
+        "71d0a5d501b98f97f3074df03322584ea9abef760c76b119df6387a64567811a",
+        "324e240c6a8ba13993a0e9e79cac7c54cc6e976940ef6c4debdf8c3df02c1395",
+        "5975c9d2f46bc84a9fe53c2e047051169bea497f90fe959414f5d5b65223dc98",
+        "f569e86d29c07cdb0e84eb3d4cd1c122f6705115e2f8998f807384b41aa0b2d7",
+        "9b112b50fe7cb81eba9622c45fa11a9af41da3befb33d78783522bcdf0745698",
+        "bcf918a78f429a6afbb6f12ff4160208cac275c0a8aa22955b209affde4930d1",
+        "65ae8687a3d8d1ed11da8b9608b9e28b4f0804bb374c182ba1604eb88724928e",
+        "f161cc30b91471822f3a7ce15cd75c9ee817b8d5c4f3ca676e4170f3ed43050d",
+        "5a8d8337dee8e4eea62463abd54b428b69728bb567ff6434ab9a55721deaf7e9",
+        "ade8be9431124611bbbe5fed981a76a2819d9f6f269fbf14828fa25150c9c3f8",
+        "867220c218d4c7ff4262b0ea91456d841c25e840915e0bee517ed50cc2f02920",
+        "fc5d28040e3e282fd93d34660f35368ffc4697bedb89e7d850a254a237f123f4",
+        "7e32e485b95af66d6706d2f2f103d47c83e1cea2fd38c97d2cd2c8156f138a04",
+        "75a3deddfc185eabbaae74e645aa35c4ca98c518476369542fb720b70483e3a0",
+        "c6c1e31461a760c0105261c288f6aae620249eade00d645e3d2ebf77adf735fc",
+        "d5a79708eb23c3f15bf7466833d11c300e997b25ad69111961a810dc764f1cfe",
+        "96fa65321f1dcc96b776f3b1f7e7ced06eac4394f793c3c41636dadfc4db424b",
+        "90c2b6fd0d0f6e1764331830f83b3c48187c2439d1b003f95be7d768d7544500",
+        "449e99663111b71eedb558865cabec26efc35052b2750faf599298db1d8312c2"
+      ]
+    },
+    {
+      "phase": "credential/Falcon-verify/D128",
+      "fixtureSuite": 2,
+      "bodyBytes": 128,
+      "bodySha256": "641e9567f0958276cab67116bcd11b730747deb8c389dafaaa6e8bed52bea6a0",
+      "signatureBytes": [
+        666
+      ],
+      "poolSize": 32,
+      "relativeDirectory": "public-fixtures/D128-Falcon",
+      "signatureSha256": [
+        "d28dd9124c7cf5d5f601c3f7e135c8b67750ae967831b2fcef8551408426240e",
+        "64d65acced31720c3e0ea96a6a92c6e814edca14fd46488259f054140f9c31ef",
+        "de6d5d7fe1350a86264bbe94b6cde32adedc278bb06c806ab202e2f6d0c5b037",
+        "d33da7a1e4c79cf7310049bfbb7a775b13efbb56ae1ba07d0a24ed2073afc03e",
+        "87e659532da33df20d298022db86ef1071233592f8e3d2a6b4c796d4530d8d20",
+        "7c5e5c46f1fefeb2a591e787278e97b9aaa1eaece057cd02447d6a7098ce226b",
+        "b19b568ec982e7502b860391622bd839d399a029e9d0bb0cd5ad3b587e2c0bab",
+        "7a947a064b5f45c683eea869b73631c5cefec95cf17afae723dfce75df1c7e68",
+        "6b7aad59ccc956d2d3cac3d9d515b1dc52589aa4eebaa0c1ffd4188184fe523e",
+        "59b74812ffc7a0335a4e08fc3317d0398626e30c5f761a53a0f0045de54589d5",
+        "800535ec50b97da50228147fcf55a8f6c14dad1f141608912e13a1a66f343f4f",
+        "37ea13c60eae74e9249843b26bfc1260f4bbbbb3912f2f74b7e1fbdda100655f",
+        "a078062476e5233116305cd4f2d57bb2e31079d5ecb379263ae2862d66d235f4",
+        "0eaf063ca22e40bb6526182cb03009f242d61e4a9113ab3e32a155dc74a7853b",
+        "1d3f457fb820d1e8e754b485510ba9d789fe28c7b06d8eaf8b3f291746486d1e",
+        "6d3363346f199ac195ed18770970f4e2898c9dec5cebbaa8f3fa6ef3c31abc50",
+        "5f4defc37ad1f544c525be1e24fde3ff7b5c685469ec85f7616219464cfe9504",
+        "c52253d465341bbd4abdf5b642eed9e774d6e44ccbb8dae8acfc2e86f19b3fdf",
+        "2ebe13b72298bb22040f68b87852809de463a00e57ec172dde6e646452e6c8ed",
+        "c7690b9740112eb72c613d9cadcfd22018edad9be0f67df0c95597a3d16aeefd",
+        "1aac45a4d71014cc03c634ea36c4df0aee1db47b04202250c86fc188a4dc1f32",
+        "346bbf8e085dfce5037421da047e09cade5b4f2817eeb2786010ab623911570a",
+        "8450c943058c77041c4c73419d9cac907c64be56167445035f98794cc0eb6fe3",
+        "27c0a814c90b07e3f90bcecbdd4ee87684fb8b4294055ad9dd2a094f285de688",
+        "941da8a6ca06222d72af1e97c320094471805f1910a11905a7b211e963801769",
+        "4cf6b178a7564348cde296b239b6ba85c16089734432279189504c0b16665dbc",
+        "fd28e93630d39d6218921e63f3c253558ecbb145e78216f0bdd9da4ea86f5f2a",
+        "5c427bbfa5b30a54d42f34b2fd6432620adeb741410c11161f1c678c97375b38",
+        "af381b9ed4cac956a393f898ae004f3848429a91fb25b98d894ab44ac50a00b4",
+        "668bc291bb0a449503ac3da3dff8f366a6a591e2aca0fab54646e7102ad1edc2",
+        "c22e21402fb64eed562b181730fcb62e3ef860c3322eb7d655a4234e1c74dc63",
+        "3d632bae93cabd2a0e928c580a1b09d9bbb6e7957ef09171716471446dbfdf7b"
+      ]
+    },
+    {
+      "phase": "credential/SM2-verify/D1025",
+      "fixtureSuite": 3,
+      "bodyBytes": 1025,
+      "bodySha256": "cc6bee7a01fa4922254452e5f14c1724a24aa24f59fa8e3490606b0af3148f44",
+      "signatureBytes": [
+        64
+      ],
+      "poolSize": 32,
+      "relativeDirectory": "public-fixtures/D1025-SM2",
+      "signatureSha256": [
+        "b62474cf395ef7a4e77e3aacac780486db9aaff66295a009b01cfbbb5be06449",
+        "2dcb81efb9b65b050067154c4daef7ed71adfd442c39002bba9c235778c86762",
+        "021518b41e750fef459da022baebe8d815398309bb39a3604bebd7f1466fd0fd",
+        "7d91d4c31fdb0bdb9b1d9b495f25da1a99cb825405be6cf81a7b057b52d03657",
+        "59b5cb830798c328d89d0f5195fb5031873f280f732ee0ad58231148144d476a",
+        "db23c7d63ce63da44882fe5af0f57955e06fd83bbad674e5b68b3efe0d137f4b",
+        "5a991b67fab561fb1d691007b71cc3f43dee8b8341e7fbbf39e5d0960dc055d7",
+        "86997e435251457edcf0f6b5734531ef398c766358f01db34a19149c7b8bc104",
+        "dbf8ea9a79a36a428371a597217bdfdcceb8420101ac5d4ff58b565433a42d34",
+        "9055404cabdf82872d143958d34d30a001c6479e9e855ba83da74edc96567f48",
+        "28d866c0eefa507f2d6f2e981eafe96b6c8fa9c6db21768a912309ae280a4372",
+        "087f15a76932953d3125399d0dee2dc7df4f40be33aa07c48ca94f6969499e9b",
+        "f3344c458787a75a1d6953ff308407cadda92def7d6d040c393429ec04045457",
+        "845f2e31f0ea1dab4a45059c7af37686f9658d02c7b69892764d3f6599fe787d",
+        "837d75800f828361b7061f0382e1f48cbd57ca84cb1674256cfadac560caf73a",
+        "55dd691780fe89cca337a01f5b9afd14e5d533f5ab238a8d91954439dc00239b",
+        "ed3828c73decc425c54d65b46e0b63a2450d729d222d1aba1f49361e7e27fe5d",
+        "c805a0b253c8b0a2cc973a66884670bf1850b14f010d87f9275143e9975bca02",
+        "79befe744422b7df2ccc22fe2bb283719ad317a5835fe0b188e418bbc9406991",
+        "7a55369490127959612b56b6fcb21bab911fc214cfdcf606eede07922953d571",
+        "328a4b7193c5fb7bf9d31d2d6faf04a9ccc341ac5ba39a327c8677f302b10fed",
+        "a2f5bb2bedfada36d6c9828d6e1553ab38352613a57c75faa30b805daa6004f3",
+        "b9bcb77bf18fcd879b8da0246df82e28d2d7b4c7b4b8189175ce6fd7d5b975be",
+        "9cc8d96db8d676a1fcbb3c887eeadf8669c4ea533125aea21fcf04e57ef342bc",
+        "482390a32245159610899ef304e7754efaf2afb64d0b8e06faeaa2a80642b50b",
+        "6827fb9cc6a6facc73912934ed1563b0e03a7a4e94523c5c0c46c310e046e382",
+        "fdffde77d76be3454d4b641d46667bdcf81b0718506ce61fc3c01833d5ffc241",
+        "d7fa66f17a8354c644267526ea4f9bda4b1916733ee2b6638d833b8629a10c1a",
+        "24aa2ccf865080bf91cdbca95cc2a809c1ba6829c5b7d9d677ed7e7138c77924",
+        "940223825650bac39999de666d62ef6bacfe5f2f4924efaa97f212539e72942f",
+        "c0a885bfef40938269052aa1d3e6b886cd7203c7fae20305f93dcad78b58eae3",
+        "134f8cccd5cca46920f97f53842861f72baea0b80a6c47760d6d0bd10767b5af"
+      ]
+    },
+    {
+      "phase": "credential/Falcon-verify/D1025",
+      "fixtureSuite": 3,
+      "bodyBytes": 1025,
+      "bodySha256": "cc6bee7a01fa4922254452e5f14c1724a24aa24f59fa8e3490606b0af3148f44",
+      "signatureBytes": [
+        666
+      ],
+      "poolSize": 32,
+      "relativeDirectory": "public-fixtures/D1025-Falcon",
+      "signatureSha256": [
+        "a4c842776fd033cba623e85e654ffd34d64d8ed6f01e405799610306002e5d15",
+        "44d2fcd1879ad4eefb3b3c173c3060b7f81dc18fc7cb377146052e47f7d9ab67",
+        "eb14f7a96e6ca8f70e45d55b1f8875b9d5d4962b8dade660d5b027f1cf9b7b39",
+        "7c8db40d53d09568296c3c56a668a08e89f37107cd35e3a28dbedcf5e8822cee",
+        "baeae43f4a11bc82487c426a62399e7db699f75ae7f5838cfe084bfb60523c30",
+        "f24b0b5c67b6fd916ac55383d5be78788447898f0cbc77130a2df363b0e81198",
+        "28f5e5c355d033e3502976e95b5c3b18f746bf963c7115cc4b923699eee9317f",
+        "da8b58a73b332da71cb7c0323914173b4d29144ce1dc593bc23371732ce0592a",
+        "96347dc20cb348a1230f119ab84d846b8bcabcc30062312909794afa703ab3c5",
+        "4d9a4ce9c8ea283a4497061be08b1b5a4839f4407250eec369bbccb12703176e",
+        "e38e72e42275d6103c1afeda3e544b67b7d11b2552282d15b5584b81fede7a1f",
+        "45b4cf546275ab1253d78908926c3ae1968e3f0e0295128647c421fb260cb656",
+        "2d6d4056ac8adfc2b72a7c6195804902d38866a7a7283bbddd0874564d68bf86",
+        "b8f3cc46c82fdf9179ee35d7a8285bc17245186042ad9d7a9ce6df2aa44a988f",
+        "14e9fda71474a3ef70889a0923e91b6ef8777addcd917878b8b3c6b156eb6fcd",
+        "ccaf377c95fbdda83ee69811f282c6b24429f7502b144c61b196f6ce3e5a445a",
+        "999de9418f92c0318058a9ecf480aa8bc3f448388dcae10ae3d59564e422c5f8",
+        "375feb7fc989e99afa000f712b9c0192f2a283c1e6331f7e4b81abee17d99079",
+        "a7f9fc5c94c9145a1b58c302128ebb2eeb2212f3ea22e8b2e62a4525fd4dd2bf",
+        "ae0dffb3e6e6eb00a21c76b6491b3ab2d5488e1f054204994607daf13e370a0f",
+        "7a084ac1bcde2183d1aacc94af8dfc011c52866d8f5b7d8f8ebd15f112f6284e",
+        "9f700788691225d85111dd859686416df8ca5074f2d194bafe71b9d19f11d7b6",
+        "e3cadc17a3f33041ba8ab4d05444d2e060e18aaa8f5bf7db4ef61fbd056a3675",
+        "65c39af1d3ad4f5761ad6691596add7f9631df46f9ca8f5371dc2baa0975513e",
+        "3094d6a88430d3ce8e09ec72bb1fc460fe458f5c0bfdc997ca8c4a7265d88520",
+        "d7462278c0e3d5e08a27da8fc8b2e8e89d19d6cad7c7b2d8fd0522f5a7d3cbbc",
+        "ef71bdd8f6f634b8644832becb935fb40649a3db9122a3b596aab34af2d77688",
+        "e19afaad77019adc1e88f049bf19c0f1d0886cdc229403bc0251532c13037653",
+        "c19e7de768c36408677861a0d3bbb8bc88e817d629fb912cc779c374e975469e",
+        "ec78d74c546e1afa761067dd8e2178f2ecba4a91ec87402c74aae69f53474a5e",
+        "a94ee422dad17bcc7c9196e1b7aa586cc354d4f69ea100243f177c27f494b525",
+        "eb430bd4df3e581557afb86b61ec9e7ed6481db7e808da7f60dfe13aa6ee1c4f"
+      ]
+    }
+  ],
+  "java": {
+    "java.version": "23",
+    "java.runtime.version": "23+37-2369",
+    "java.vendor": "Oracle Corporation",
+    "java.vm.name": "Java HotSpot(TM) 64-Bit Server VM",
+    "java.vm.version": "23+37-2369",
+    "os.name": "Mac OS X",
+    "os.version": "26.6.2",
+    "os.arch": "aarch64"
+  },
+  "jvmArguments": [
+    "-Xms512m",
+    "-Xmx512m",
+    "-XX:+UseG1GC"
+  ],
+  "availableProcessors": 8,
+  "maxHeapBytes": 536870912,
+  "garbageCollectors": [
+    "G1 Young Generation",
+    "G1 Concurrent GC",
+    "G1 Old Generation"
+  ],
+  "clockProbe": {
+    "minPositivePairNanos": 41,
+    "medianPairNanos": 0
+  },
+  "timingScope": "One production CryptoProvider verification call, including key decoding, signer initialization, hashing and signature-format checks; excludes setup key generation/signing/validation, fixture writes, credential parsing, digest, policy, network and ledger operations",
+  "randomness": "Fresh per-JVM keys and real SecureRandom signatures; order seed does not seed cryptography",
+  "warmupFailurePolicy": "Stop fork immediately; metadata and prior measured rows retained",
+  "measurementFailurePolicy": "Retain every failed row and complete all phases before nonzero exit",
+  "outlierPolicy": "Retain all observations; no GC, scheduling or other outlier removal",
+  "counterScope": "Phase counters include both warmup and measured iterations; they do not identify per-observation GC effects",
+  "phases": [
+    {
+      "phase": "credential/Falcon-verify/D1025",
+      "phaseWallNanos": 69360375,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 4,
+            "millis": 3
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 478
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 4,
+            "millis": 3
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 556
+      }
+    },
+    {
+      "phase": "credential/Falcon-verify/D128",
+      "phaseWallNanos": 49061583,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 4,
+            "millis": 3
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 557
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 4,
+            "millis": 3
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 560
+      }
+    },
+    {
+      "phase": "credential/SM2-verify/D128",
+      "phaseWallNanos": 1693034083,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 4,
+            "millis": 3
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 560
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 16,
+            "millis": 13
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 1185
+      }
+    },
+    {
+      "phase": "credential/SM2-verify/D1025",
+      "phaseWallNanos": 1655770167,
+      "before": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 16,
+            "millis": 13
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 1185
+      },
+      "after": {
+        "gc": {
+          "G1 Young Generation": {
+            "count": 27,
+            "millis": 20
+          },
+          "G1 Concurrent GC": {
+            "count": 0,
+            "millis": 0
+          },
+          "G1 Old Generation": {
+            "count": 0,
+            "millis": 0
+          }
+        },
+        "jitCompilationMillis": 1337
+      }
+    }
+  ],
+  "failedMeasuredRows": 0,
+  "completedAllPhases": true,
+  "endedUtc": "2026-11-03T09:17:01.529205Z"
+}

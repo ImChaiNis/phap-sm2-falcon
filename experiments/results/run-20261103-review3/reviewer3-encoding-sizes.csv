@@ -1,0 +1,5 @@
+profile,body_bytes,ca_sm2_signature_bytes,ca_falcon_signature_bytes,credential_bytes,message_signature_bytes,fragment_payload_cap_bytes,fragment_header_bytes,fragments,fragment_payloads_bytes
+SM2-only,128,64,0,200,64,256,44,1,200
+PHAP,128,64,666,866,64,256,44,4,256;256;256;98
+Falcon-message,1025,64,666,1763,666,256,44,7,256;256;256;256;256;256;227
+Dual-message,1025,64,666,1763,730,256,44,7,256;256;256;256;256;256;227

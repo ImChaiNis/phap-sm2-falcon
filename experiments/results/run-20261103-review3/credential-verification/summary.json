@@ -1,0 +1,326 @@
+{
+  "classification": "Desktop real-cryptography CA verification; no representative-terminal timing claim",
+  "validation": {
+    "forks": 5,
+    "phases_per_fork": 4,
+    "warmup_per_phase": 500,
+    "samples_per_phase": 1000,
+    "total_measured_rows": 20000,
+    "failed_rows": 0,
+    "all_expected_rows_present": true,
+    "public_binary_hashes_and_sizes_consistent": true
+  },
+  "scope": "One production CryptoProvider verification of the canonical 128B suite2 or 1025B suite3 credential body; excludes key generation/signing/setup and credential parsing/policy/transport/ledger. CA SM2 signer identity is included by the provider.",
+  "statistics": "Pooled median/p95 (linear interpolation type7); no row exclusions; 95% Student-t interval over five fork means, df4, t2.776445",
+  "phases": {
+    "credential/SM2-verify/D128": {
+      "n": 5000,
+      "mean_ms": 1.119498926,
+      "median_ms": 1.0677705,
+      "p95_ms": 1.23375415,
+      "min_ms": 0.995458,
+      "max_ms": 57.72875,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.070227266,
+        1.0729554110000001,
+        1.119830701,
+        1.1260889029999999,
+        1.208392349
+      ],
+      "mean_ci95_low_ms": 1.049978013368998,
+      "mean_ci95_high_ms": 1.1890198386310018,
+      "mean_ci95_half_width_ms": 0.06952091263100198,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.070227266,
+          "median_ms": 1.053125,
+          "p95_ms": 1.14170145,
+          "min_ms": 1.004208,
+          "max_ms": 2.239625
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.0729554110000001,
+          "median_ms": 1.054334,
+          "p95_ms": 1.15698925,
+          "min_ms": 0.995458,
+          "max_ms": 2.157334
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.119830701,
+          "median_ms": 1.0765,
+          "p95_ms": 1.3182270999999997,
+          "min_ms": 1.010958,
+          "max_ms": 2.741375
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.1260889029999999,
+          "median_ms": 1.080896,
+          "p95_ms": 1.27459645,
+          "min_ms": 1.009542,
+          "max_ms": 13.87175
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.208392349,
+          "median_ms": 1.087833,
+          "p95_ms": 1.3074440499999997,
+          "min_ms": 1.016375,
+          "max_ms": 57.72875
+        }
+      ]
+    },
+    "credential/Falcon-verify/D128": {
+      "n": 5000,
+      "mean_ms": 0.0337158938,
+      "median_ms": 0.032291,
+      "p95_ms": 0.042875,
+      "min_ms": 0.028417,
+      "max_ms": 0.086125,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        0.036637454,
+        0.033470910000000006,
+        0.030690617,
+        0.031529361,
+        0.036251127
+      ],
+      "mean_ci95_low_ms": 0.030375139088375646,
+      "mean_ci95_high_ms": 0.03705664851162435,
+      "mean_ci95_half_width_ms": 0.0033407547116243532,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.036637454,
+          "median_ms": 0.035125,
+          "p95_ms": 0.0461271,
+          "min_ms": 0.030291,
+          "max_ms": 0.069209
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.033470910000000006,
+          "median_ms": 0.0313335,
+          "p95_ms": 0.04116605,
+          "min_ms": 0.029125,
+          "max_ms": 0.0835
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.030690617,
+          "median_ms": 0.0296665,
+          "p95_ms": 0.03537914999999999,
+          "min_ms": 0.028417,
+          "max_ms": 0.056375
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.031529361,
+          "median_ms": 0.03075,
+          "p95_ms": 0.03625414999999999,
+          "min_ms": 0.02925,
+          "max_ms": 0.077458
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.036251127,
+          "median_ms": 0.034417,
+          "p95_ms": 0.05271214999999999,
+          "min_ms": 0.029666,
+          "max_ms": 0.086125
+        }
+      ]
+    },
+    "credential/SM2-verify/D1025": {
+      "n": 5000,
+      "mean_ms": 1.1170432926,
+      "median_ms": 1.071562,
+      "p95_ms": 1.2225024000000004,
+      "min_ms": 1.009417,
+      "max_ms": 32.934333,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        1.196916092,
+        1.1113591969999999,
+        1.109144466,
+        1.08901084,
+        1.078785868
+      ],
+      "mean_ci95_low_ms": 1.0590567438286462,
+      "mean_ci95_high_ms": 1.1750298413713538,
+      "mean_ci95_half_width_ms": 0.05798654877135386,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.196916092,
+          "median_ms": 1.0653335,
+          "p95_ms": 1.388521149999999,
+          "min_ms": 1.009417,
+          "max_ms": 32.934333
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.1113591969999999,
+          "median_ms": 1.0816665,
+          "p95_ms": 1.2848524,
+          "min_ms": 1.01375,
+          "max_ms": 2.034584
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.109144466,
+          "median_ms": 1.07,
+          "p95_ms": 1.2276048,
+          "min_ms": 1.009666,
+          "max_ms": 11.850459
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.08901084,
+          "median_ms": 1.0737085,
+          "p95_ms": 1.1680422999999998,
+          "min_ms": 1.019958,
+          "max_ms": 1.797041
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 1.078785868,
+          "median_ms": 1.069104,
+          "p95_ms": 1.13827055,
+          "min_ms": 1.012959,
+          "max_ms": 1.983875
+        }
+      ]
+    },
+    "credential/Falcon-verify/D1025": {
+      "n": 5000,
+      "mean_ms": 0.034136352,
+      "median_ms": 0.031875,
+      "p95_ms": 0.044083,
+      "min_ms": 0.028584,
+      "max_ms": 0.089667,
+      "successes": 5000,
+      "failures": 0,
+      "fork_means_ms": [
+        0.031246547,
+        0.031562015,
+        0.038563646,
+        0.038684432,
+        0.03062512
+      ],
+      "mean_ci95_low_ms": 0.02903218811678742,
+      "mean_ci95_high_ms": 0.03924051588321257,
+      "mean_ci95_half_width_ms": 0.005104163883212575,
+      "per_fork": [
+        {
+          "fork": 1,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.031246547,
+          "median_ms": 0.030958,
+          "p95_ms": 0.03316605,
+          "min_ms": 0.030041,
+          "max_ms": 0.048292
+        },
+        {
+          "fork": 2,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.031562015,
+          "median_ms": 0.030167,
+          "p95_ms": 0.0362101,
+          "min_ms": 0.028584,
+          "max_ms": 0.0825
+        },
+        {
+          "fork": 3,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.038563646,
+          "median_ms": 0.037333,
+          "p95_ms": 0.047,
+          "min_ms": 0.031667,
+          "max_ms": 0.089667
+        },
+        {
+          "fork": 4,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.038684432,
+          "median_ms": 0.036959,
+          "p95_ms": 0.05147149999999998,
+          "min_ms": 0.032292,
+          "max_ms": 0.0805
+        },
+        {
+          "fork": 5,
+          "successes": 1000,
+          "failures": 0,
+          "n": 1000,
+          "mean_ms": 0.03062512,
+          "median_ms": 0.030166,
+          "p95_ms": 0.0337931,
+          "min_ms": 0.029542,
+          "max_ms": 0.045959
+        }
+      ]
+    }
+  },
+  "failed_observations": []
+}
